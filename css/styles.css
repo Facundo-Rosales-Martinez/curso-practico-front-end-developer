@@ -1,0 +1,102 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --dark-yellow: #c9ac07;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --active-green:#69ac72;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+  background-color: #00263E;
+  background-image: linear-gradient(to bottom, #00263E, #ACD9B2);
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #568078;
+  padding: 20px;
+}
+
+/* Estilos del menú de navegación */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del logotipo y texto del menú */
+.menu-logo {
+  display: flex;
+  align-items: center;
+}
+
+
+.menu-logo-yard {
+  width: auto;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* Estilos de la lista de enlaces */
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--hospital-green);
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: var(--active-green);
+}
+
+/* Estilos del área de inicio de sesión y carrito de compras */
+.menu div {
+  display: flex;
+  align-items: center;
+}
+
+.menu div a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.menu div a:hover {
+  color: var(--active-green);
+}
+
+.menu div img {
+  width: 20px;
+  height: auto;
+}
+
+@media (max-width: 670px) {
+  .menu-logo-yard {
+    display: none;
+  }
+  .menu ul li {
+    margin-right: 10px;
+  }
+}
